@@ -1,1 +1,108 @@
 style.css
+/* Configurações globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo leve */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container para centralizar o conteúdo */
+header, main, footer {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #d9534f; /* Um vermelho "cantina" */
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo das Seções */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #d9534f;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+/* Estilo do Cardápio */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+/* Estilo do Botão Interativo */
+#btn-prato-dia {
+    background-color: #5cb85c; /* Verde */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-prato-dia:hover {
+    background-color: #4cae4c; /* Verde mais escuro */
+}
+
+#resultado-prato {
+    margin-top: 15px;
+    color: #0275d8; /* Azul */
+}
+
+/* Estilo do Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    background-color: #333;
+    color: white;
+}
